@@ -1,0 +1,80 @@
+<div
+  class="directions-banner d-flex justify-content-between align-items-center p-3"
+  (click)="routeToDestination()">
+
+  <div class="left-cluster d-flex align-items-center">
+
+    <div class="white-circle d-flex justify-content-center align-items-center me-3">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+      </svg>
+    </div>
+
+    <div>
+      <div class="title-main">
+        {{ ts.translate('label_directions') }}
+      </div>
+
+      <div class="subtitle-meta">
+        {{ ts.translate('val_directions_sub') }}
+      </div>
+
+      <small
+        class="subtitle-meta directions-auto"
+        *ngIf="countdown() > 0">
+        {{ ts.translate('val_directions_auto') }}
+        {{ countdown() }}s
+      </small>
+    </div>
+
+  </div>
+
+  <div class="right-cluster d-flex align-items-center">
+
+    <div class="countdown-container me-3" *ngIf="countdown() > 0">
+
+      <svg class="circle-svg" width="44" height="44">
+        <circle
+          cx="22"
+          cy="22"
+          r="18"
+          stroke="rgba(255,255,255,.25)"
+          stroke-width="3"
+          fill="none">
+        </circle>
+
+        <circle
+          cx="22"
+          cy="22"
+          r="18"
+          stroke="#fff"
+          stroke-width="3"
+          fill="none"
+          [style.stroke-dashoffset]="dashoffset()"
+          stroke-dasharray="113">
+        </circle>
+      </svg>
+
+      <span class="timer-text">
+        {{ countdown() }}
+      </span>
+
+    </div>
+
+    <svg
+      class="arrow-icon"
+      width="22"
+      height="22"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="3">
+
+      <line x1="5" y1="12" x2="19" y2="12"></line>
+      <polyline points="12 5 19 12 12 19"></polyline>
+
+    </svg>
+
+  </div>
+
+</div>

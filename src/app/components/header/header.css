@@ -1,0 +1,195 @@
+.header-container {
+  position: relative;
+
+  padding: 50px 25px 35px;
+
+  text-align: center;
+}
+
+/* ===========================
+   OM
+=========================== */
+
+.om-wrapper {
+  color: var(--gold-text);
+
+  font-size: 34px;
+
+  margin-bottom: 18px;
+}
+
+.om-text {
+  font-family: 'Noto Serif Devanagari', serif;
+
+  font-size: 48px;
+
+  font-weight: 700;
+
+  color: #b38226;
+
+  text-shadow: 0 2px 8px rgba(229, 178, 77, 0.25);
+}
+
+.ornament {
+  color: #ddb04d;
+
+  font-size: 22px;
+}
+
+/* ===========================
+   MANTRA
+=========================== */
+
+.mantra-line {
+  font-size: 16px;
+
+  color: #81642d;
+
+  line-height: 1.7;
+
+  font-family: 'Noto Serif', serif;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.illustration-stage {
+  position: relative;
+
+  max-width: 520px;
+
+  margin: auto;
+
+  min-height: 320px;
+}
+
+/* Baby */
+
+.baby-avatar-cloud {
+  width: 280px;
+  height: 280px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fff9e6 0%, #dff4ff 30%, #bee9ff 70%, #fff1b8 100%);
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 30px 60px rgba(80, 130, 200, 0.3),
+    0 0 40px rgba(135, 206, 235, 0.25),
+    inset 0 -20px 40px rgba(255, 255, 255, 0.4);
+}
+
+.baby-name-display {
+  position: relative;
+  margin-top: 16px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #004ba3;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 0 2px 6px rgba(0, 75, 163, 0.15);
+}
+
+.baby-illustration {
+  width: 85%;
+  animation: baby-bounce 3s ease-in-out infinite;
+}
+
+@keyframes baby-bounce {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-15px) scale(1.05);
+  }
+}
+
+.baby-svg-canvas {
+  width: 90%;
+}
+
+/* Left decoration */
+
+.cradle-left {
+  position: absolute;
+
+  left: 0;
+
+  top: 20px;
+
+  width: 85px;
+}
+
+/* Right decoration */
+
+.balloons-right {
+  position: absolute;
+
+  right: 0;
+
+  top: 5px;
+
+  width: 95px;
+}
+
+/* Floating animation */
+
+.cradle-left,
+.balloons-right {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+  .om-text {
+    font-size: 38px;
+  }
+
+  .mantra-line {
+    font-size: 14px;
+  }
+
+  .illustration-stage {
+    min-height: 250px;
+  }
+
+  .baby-avatar-cloud {
+    width: 190px;
+    height: 170px;
+  }
+
+  .baby-name-display {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .cradle-left {
+    width: 60px;
+  }
+
+  .balloons-right {
+    width: 70px;
+  }
+}

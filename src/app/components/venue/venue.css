@@ -1,0 +1,26 @@
+.venue-icon {
+  width: 46px;
+  height: 46px;
+}
+
+.venue-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.8px;
+  color: var(--bs-warning, #cfa851); /* or your custom gold color */
+  font-weight: 700;
+}
+
+.venue-title {
+  font-size: 1.05rem;
+  margin: 0.25rem 0 0;
+  font-weight: 700;
+  color: #212529;
+}
+
+.venue-address {
+  font-size: 0.76rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #6c757d;
+  margin: 0.25rem 0 0;
+}

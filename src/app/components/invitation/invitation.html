@@ -1,0 +1,73 @@
+<div class="container py-4">
+  <div class="card-outer-envelope position-relative mx-auto">
+    <!-- Language -->
+    <app-language-switcher></app-language-switcher>
+
+    <!-- Header -->
+    <app-header></app-header>
+
+    <!-- Hero Text -->
+    <div class="body-typography-center text-center">
+      <p class="welcome-msg">
+        {{ ts.translate('welcome_text') }}
+      </p>
+
+      <h1 class="baby-title-hero">
+        {{ ts.translate('baby_boy') }}
+      </h1>
+
+      <div class="feet-divider">👣</div>
+
+      <p class="purpose-stmt">
+        {{ ts.translate('invitation_purpose') }}
+      </p>
+
+      <h2 class="highlight-event-title">
+        {{ ts.translate('event_title_1') }}
+      </h2>
+
+      <div class="sub-event-lbl">
+        {{ ts.translate('event_subtitle_1') }}
+      </div>
+
+      <div class="ampersand-divider">&</div>
+
+      <h2 class="highlight-event-title event-title-secondary">
+        {{ ts.translate('event_title_2') }}
+      </h2>
+
+      <p class="purpose-stmt join-us-text">
+        {{ ts.translate('join_us') }}
+      </p>
+    </div>
+
+    <div class="mt-4">
+      <app-family></app-family>
+    </div>
+
+    <div class="mt-4">
+  <app-location></app-location>
+</div>
+
+
+    <div class="mt-4">
+      <app-event-details></app-event-details>
+    </div>
+
+    <div class="mt-4">
+      <app-call-host></app-call-host>
+    </div>
+
+    <div class="mt-4">
+      <app-template-buttons></app-template-buttons>
+    </div>
+
+    <div class="mt-4">
+      <app-get-directions></app-get-directions>
+    </div>
+
+    <div class="mt-5">
+      <app-footer></app-footer>
+    </div>
+  </div>
+</div>

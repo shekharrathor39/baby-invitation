@@ -1,0 +1,108 @@
+﻿.whatsapp-card {
+  background: linear-gradient(135deg,#25D366 0%, #128C7E 100%);
+  border: 4px solid #00d95f;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 217, 95, 0.35);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 217, 95, 0.5), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.whatsapp-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.whatsapp-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 50px rgba(0, 217, 95, 0.45);
+  border-color: #00b84d;
+}
+
+.whatsapp-card:hover::before {
+  opacity: 1;
+}
+
+.whatsapp-card:hover::after {
+  opacity: 1;
+}
+
+.whatsapp-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00d95f 0%, #00a844 100%);
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow:
+    0 10px 28px rgba(0, 217, 95, 0.6),
+    inset 0 -3px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-card:hover .whatsapp-icon {
+  transform: scale(1.15) rotate(-15deg);
+  box-shadow:
+    0 14px 40px rgba(0, 217, 95, 0.7),
+    inset 0 -3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* UPDATED TITLE COLOR */
+.whatsapp-title {
+  color: #1f5fb9 !important;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.whatsapp-card:hover .whatsapp-title {
+  color: #1f5fb9 !important;
+}
+
+/* UPDATED SUBTITLE COLOR */
+.whatsapp-subtitle {
+  color: #1f5fb9;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Keep title blue on hover */
+.whatsapp-card:hover .whatsapp-title,
+.whatsapp-card:hover .whatsapp-subtitle {
+  color: #1f5fb9;
+}
+
+.whatsapp-arrow {
+  color: #00d95f;
+  transition: transform 0.25s;
+  font-weight: 800;
+}
+
+.whatsapp-card:hover .whatsapp-arrow {
+  transform: translateX(12px);
+}

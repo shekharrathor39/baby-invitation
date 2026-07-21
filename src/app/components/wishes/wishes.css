@@ -1,0 +1,40 @@
+.wishes-container {
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.wishes-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 20px;
+  border: 2px solid #d4a574;
+  border-radius: 20px;
+  font-size: 14px;
+  text-align: center;
+  font-style: italic;
+  color: #333;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.wishes-input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.wishes-input:focus {
+  outline: none;
+  border-color: #c4885a;
+  box-shadow: 0 0 0 3px rgba(196, 136, 90, 0.1);
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .wishes-input {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+}

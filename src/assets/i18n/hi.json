@@ -1,0 +1,58 @@
+{
+  "om": "ॐ",
+  "ganesha_mantra": "|| श्री गणेश नमः ||",
+  "hari_mantra": "|| श्री हरिः ||",
+  "baby_name": "इवान",
+  "welcome_text": "अत्यंत हर्ष के साथ, हम अपने",
+  "baby_boy": "बालक का स्वागत करते हैं",
+  "invitation_purpose": "इस पावन अवसर पर, हम आयोजित कर रहे हैं",
+  "event_title_1": "कथा",
+  "event_subtitle_1": "(धार्मिक सभा)",
+  "ampersand": "&",
+  "event_title_2": "भोज",
+  "join_us": "कृपया सपरिवार हमारे साथ पधारें ।",
+
+  "label_date": "दिनांक",
+  "val_date": "29 जुलाई 2026",
+  "val_day": "(बुधवार)",
+
+  "label_time": "समय",
+  "val_time": "7:00 AM से आगे",
+
+  "label_sequence": "कथा के पश्चात",
+  "val_sequence": "भोज",
+
+  "label_venue": "स्थान",
+  "venue_name": "कर्णावती रिविएरा",
+  "venue_line1": "G-703,एएमसी वाटर टैंक के सामने,",
+  "venue_line2": "कर्णावती एन्क्लेव के आगे,",
+  "venue_line3": "न्यू मणिनगर के पास,",
+  "venue_line4": "रामोल, अहमदाबाद - 382449",
+
+  "label_call_host": "मेजबान को कॉल करें",
+  "label_whatsapp": "व्हाट्सएप",
+  "val_whatsapp_sub": "शुभकामनाएं भेजें",
+
+  "label_calendar": "कैलेंडर",
+  "val_calendar_sub": "कैलेंडर में जोड़ें",
+
+  "label_directions": "मार्गदर्शन प्राप्त करें",
+  "val_directions_sub": "हमारे घर का रास्ता देखें",
+  "val_directions_auto": "यह कार्ड स्वचालित रूप से हमारे घर का नक्शा खोलेगा",
+
+  "sec": "सेकंड",
+
+  "footer_text": "आपके गरिमामयी आगमन की प्रतीक्षा में!",
+
+  "label_worthy_son": "सुपुत्र:",
+  "family_1_line1": "उदयवीर सिंह राठौड़",
+  "family_1_line2": "मीराबेन राठौड़",
+
+  "label_son": "पुत्र:",
+  "family_2_line1": "राजनेश कुमार राठौड़",
+  "family_2_line2": "ज्योति राठौड़",
+
+  "family_3_line1": "इवान राठौड़",
+
+  "write_wish": "अपना आशीर्वाद लिखें"
+}

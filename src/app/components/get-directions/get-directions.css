@@ -1,0 +1,311 @@
+﻿/*=========================================================
+  PREMIUM GET DIRECTIONS BANNER
+  Theme : Soft Emerald Green
+=========================================================*/
+
+.directions-banner {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 24px;
+    border-radius: 24px;
+
+    background: linear-gradient(
+        135deg,
+        #2e7d32 0%,
+        #43a047 35%,
+        #66bb6a 70%,
+        #a5d6a7 100%
+    );
+
+    color: #fff;
+    cursor: pointer;
+
+    box-shadow:
+        0 15px 35px rgba(46, 125, 50, .22),
+        inset 0 1px 0 rgba(255,255,255,.18);
+
+    transition: all .35s ease;
+}
+
+/* Glass Shine */
+
+.directions-banner::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        120deg,
+        rgba(255,255,255,.18) 0%,
+        rgba(255,255,255,.08) 30%,
+        transparent 65%
+    );
+
+    pointer-events:none;
+}
+
+/* Hover */
+
+.directions-banner:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 20px 40px rgba(46,125,50,.30),
+        inset 0 1px 0 rgba(255,255,255,.22);
+}
+
+/*=========================================================
+  LEFT SECTION
+=========================================================*/
+
+.left-cluster{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+/*=========================================================
+  LOCATION ICON
+=========================================================*/
+
+.white-circle{
+
+    width:64px;
+    height:64px;
+    min-width:64px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#ffffff;
+    color:#2e7d32;
+
+    box-shadow:
+        0 10px 24px rgba(0,0,0,.15),
+        inset 0 0 0 2px rgba(255,255,255,.7);
+
+    transition:all .30s ease;
+}
+
+.directions-banner:hover .white-circle{
+
+    transform:scale(1.06) rotate(-6deg);
+}
+
+.white-circle svg{
+
+    width:30px;
+    height:30px;
+}
+
+/*=========================================================
+  TEXT
+=========================================================*/
+
+.title-main{
+
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:1px;
+    line-height:1.1;
+
+    text-transform:uppercase;
+}
+
+.subtitle-meta{
+
+    margin-top:5px;
+
+    font-size:13px;
+    line-height:1.5;
+
+    color:rgba(255,255,255,.92);
+}
+
+.directions-auto{
+
+    display:inline-flex;
+    align-items:center;
+
+    margin-top:8px;
+    padding:4px 10px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.18);
+
+    font-size:11px;
+    font-weight:600;
+
+
+    color:#fff;
+}
+
+/*=========================================================
+  RIGHT SECTION
+=========================================================*/
+
+.right-cluster{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+/*=========================================================
+  COUNTDOWN
+=========================================================*/
+
+.countdown-container{
+
+    position:relative;
+
+    width:58px;
+    height:58px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.circle-svg{
+
+    position:absolute;
+
+    width:58px;
+    height:58px;
+
+    transform:rotate(-90deg);
+}
+
+.circle-svg circle:last-child{
+
+    stroke:#fff;
+    stroke-width:3.5;
+    stroke-linecap:round;
+
+    stroke-dasharray:113;
+
+    transition:stroke-dashoffset .8s linear;
+}
+
+.timer-text{
+
+    position:relative;
+
+    font-size:15px;
+    font-weight:700;
+
+    color:#fff;
+}
+
+/*=========================================================
+  ARROW
+=========================================================*/
+
+.arrow-icon{
+
+    width:28px;
+    height:28px;
+
+    stroke-width:2.8;
+
+    transition:all .35s ease;
+}
+
+.directions-banner:hover .arrow-icon{
+
+    transform:translateX(6px);
+}
+
+/*=========================================================
+  ACTIVE CLICK EFFECT
+=========================================================*/
+
+.directions-banner:active{
+
+    transform:scale(.985);
+}
+
+/*=========================================================
+  MOBILE
+=========================================================*/
+
+@media (max-width:768px){
+
+    .directions-banner{
+
+        padding:16px;
+        border-radius:20px;
+    }
+
+    .left-cluster{
+
+        gap:14px;
+    }
+
+    .white-circle{
+
+        width:54px;
+        height:54px;
+        min-width:54px;
+    }
+
+    .white-circle svg{
+
+        width:25px;
+        height:25px;
+    }
+
+    .title-main{
+
+        font-size:18px;
+        letter-spacing:.8px;
+    }
+
+    .subtitle-meta{
+
+        font-size:12px;
+    }
+
+    .directions-auto{
+
+        margin-top:6px;
+        padding:3px 8px;
+
+        font-size:10px;
+    }
+
+    .countdown-container{
+
+        width:48px;
+        height:48px;
+    }
+
+    .circle-svg{
+
+        width:48px;
+        height:48px;
+    }
+
+    .timer-text{
+
+        font-size:13px;
+    }
+
+    .arrow-icon{
+
+        width:22px;
+        height:22px;
+    }
+}
